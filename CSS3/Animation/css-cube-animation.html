@@ -28,7 +28,7 @@
 				-webkit-transform: rotate3d(0, 0, 1, 180deg);
 			}
 
-			.cube, .cube2, .cube3, .cube4, .cube5 {
+			.cube, .cube2, .cube4, .cube3 {
 				position: relative;
 				width: 200px;
 				opacity: 0.7;
@@ -41,6 +41,13 @@
 				animation-timing-function: linear;
 				-webkit-animation-timing-function: linear;
 			}
+			.cube5 {
+				position: relative;
+				width: 200px;
+				opacity: 0.7;
+				
+			}
+		\
 
 
 			.cube div {
@@ -95,15 +102,28 @@
 				from {-webkit-transform: rotateY(0deg);}
 				to {-webkit-transform: rotateY(360deg);}
 			}
+				@keyframes spin2 {
+				from {transform: rotateY(0deg);}
+				to {transform: rotateY(-360deg);}
+			}
+
+			@-webkit-keyframes spin2 {
+				from {-webkit-transform: rotateY(0deg);}
+				to {-webkit-transform: rotateY(-360deg);}
+			}
 
 			.back {
 				background-color: red;
+								color: red;
+
 				transform: translateZ(-100px) rotateY(180deg);
 				-webkit-transform: translateZ(-100px) rotateY(180deg);
 			}
 
 			.right {
 				background-color: orange;
+								color: orange;
+
 				transform: rotateY(-270deg) translateX(100px);
 				-webkit-transform: rotateY(-270deg) translateX(100px);
 				transform-origin: top right;
@@ -112,6 +132,7 @@
 
 			.left {
 				background-color: yellow;
+				color: yellow;
 				transform: rotateY(270deg) translateX(-100px);
 				-webkit-transform: rotateY(270deg) translateX(-100px);
 				transform-origin: center left;
@@ -120,6 +141,7 @@
 
 			.top {
 				background-color: green;
+				color: green;
 				transform: rotateX(-90deg) translateY(-100px);
 				-webkit-transform: rotateX(-90deg) translateY(-100px);
 				transform-origin: top center;
@@ -128,6 +150,7 @@
 
 			.bottom {
 				background-color: blue;
+				color: blue;
 				transform: rotateX(90deg) translateY(100px);
 				-webkit-transform: rotateX(90deg) translateY(100px);
 				transform-origin: bottom center;
@@ -136,6 +159,7 @@
 
 			.front {
 				background-color: purple;
+				color: purple;
 				transform: translateZ(100px);
 				-webkit-transform: translateZ(100px);
 			}
@@ -145,12 +169,12 @@
 	<body>
 		<div class="container">
 			<div class="cube">
-				<div class="front"></div>
-				<div class="back"></div>
-				<div class="top"></div>
-				<div class="bottom"></div>
-				<div class="left"></div>
-				<div class="right"></div>
+				<div class="front">hahaha</div>
+				<div class="back">hahaha</div>
+				<div class="top">hahaha</div>
+				<div class="bottom">hahaha</div>
+				<div class="left">hahaha</div>
+				<div class="right">hahaha</div>
 			</div>
 
 			<div class="cube2">
