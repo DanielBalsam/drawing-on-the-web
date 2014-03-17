@@ -6,6 +6,9 @@
 		<meta charset="UTF-8">
 		<title>CSS3 Cube</title>
 		<style>
+		body {
+			background-color:black;
+		}
 			.container {
 				width: 200px;
 				margin: auto;
@@ -39,36 +42,39 @@
 				-webkit-animation-timing-function: linear;
 			}
 
-			.cube:hover, .cube2:hover, .cube3:hover, .cube4:hover, .cube5:hover {
-				animation-play-state: paused;
-				-webkit-animation-play-state: paused;
-			}
 
 			.cube div {
 				position: absolute;
-				width: 200px;
-				height: 200px;
+				width: 600px;
+				height: 600px;
+				background-image: url('slice.gif');
 			}
 
 			.cube2 div {
 				position: absolute;
 				top: -250px;
-				width: 200px;
-				height: 200px;
+				width: 600px;
+				height: 600px;
+				background-image: url('slice.gif');
+
 			}
 
 			.cube3 div {
 				position: absolute;
 				top: 250px;
-				width: 200px;
-				height: 200px;
+				width: 600px;
+				height: 600px;
+				background-image: url('slice.gif');
+
 			}
 
 			.cube4 div {
 				position: absolute;
 				left: 250px;
-				width: 200px;
-				height: 200px;
+				width: 600px;
+				height: 600px;
+				background-image: url('slice.gif');
+
 			}
 
 			.cube5 div {
@@ -76,6 +82,8 @@
 				left: -250px;
 				width: 200px;
 				height: 200px;
+				background-image: url('slice.gif');
+
 			}
 
 			@keyframes spin {
